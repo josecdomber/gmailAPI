@@ -9,13 +9,15 @@ Using the API exposed by Gmail, I have implemented access to a mailbox that retr
 2. As a practice, I build the function (getLabel), where I get the name of the label and the number of emails tagged with it.
 3. I look for the relation of messages, with the function (listMessages) in that mailbox for a specific label. This requires a pagination.
 4. For each mail or message retrieved, I get the data of that message (showEachMessage) retrieved from the header (headers):
-- **From**
-- **To**
-- **Date**
-- **Subject**
+   - **From**
+   - **To**
+   - **Date**
+   - **Subject**
+   
 In addition, I recover a first part of the body of the mail (snippet), knowing that I can exploit the first data of it that are marked as:
-- **Nombre:**
-- **Email:**
-- **Teléfono:**
+   - **Nombre:**
+   - **Email:**
+   - **Teléfono:**
+   
 5. Finally, for each of the data indicated, a row is exported to an Excel sheet.
 
